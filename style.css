@@ -19,7 +19,7 @@ body {
 	font-style: normal;
 	color: yellow;
 	background-color: yellow;
-	background-image: url("/images/dragonleg.png") no-repeat center fixed; 
+	background: url("/images/dragonleg.png") no-repeat center fixed; 
     background-size: cover;
    /* width: 100%;
     height: auto;*/
