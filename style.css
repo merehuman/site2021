@@ -16,6 +16,7 @@ font-family: 'Roboto Mono', monospace;
 html {
 	background: url("/images/dragonleg.png") no-repeat center fixed; 
     background-size: cover;
+    background-color: yellow
 }
 
 body { 
@@ -50,7 +51,7 @@ fieldset {
   bottom: 0;
   width: 100%;
   background-color: yellow;
-  color: white;
+  color: black;
   text-align: center;
 }
 
