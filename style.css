@@ -13,14 +13,18 @@ font-family: 'Roboto Mono', monospace;
 	box-sizing: border-box;
 }
 
+html {
+	background: url("/images/dragonleg.png") no-repeat center fixed; 
+    background-size: cover;
+}
+
 body { 
 	font-family: 'Roboto Mono', monospace;
 	font-weight: normal;
 	font-style: normal;
 	color: yellow;
-	background-color: yellow;
-	background: url("/images/dragonleg.png") no-repeat center fixed; 
-    background-size: cover;
+	/*background-color: yellow;*/
+	
    /* width: 100%;
     height: auto;*/
 
