@@ -14,8 +14,8 @@ font-family: 'Roboto Mono', monospace;
 }
 
 html {
-	background: url("/images/dragonleg.png") no-repeat center fixed; 
-    background-size: cover;
+	/*background: url("/images/dragonleg.png") no-repeat center fixed; 
+    background-size: cover;*/
     background-color: yellow
 }
 
@@ -23,7 +23,7 @@ body {
 	font-family: 'Roboto Mono', monospace;
 	font-weight: normal;
 	font-style: normal;
-	color: yellow;
+	color: black;
 	/*background-color: yellow;*/
 	
    /* width: 100%;
@@ -37,7 +37,7 @@ li {
 
 
 fieldset {
-    border:2px solid yellow;
+    border:2px solid black;
     -moz-border-radius:8px;
     -webkit-border-radius:8px;	
     border-radius:8px;	
@@ -56,7 +56,7 @@ fieldset {
 }
 
 .link {
-	color: yellow;
+	color: black;
     text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ fieldset {
 }
 
 .link1 {
-	color: yellow;
+	color: black;
     text-decoration: underline;
 }
 
@@ -76,7 +76,7 @@ fieldset {
 }
 
 .textbox {
-	border: 2px solid yellow;
+	border: 2px solid black;
 	margin: 5px;
 	padding: 5px;
 	overflow: hidden;
@@ -84,7 +84,7 @@ fieldset {
     transition-property: transform;
     text-decoration: none;
     float: left;
-    color: yellow;
+    color: black;
     box-shadow: 5px 10px;
 }
 
@@ -94,53 +94,55 @@ fieldset {
 }
 
 .button {
-	border: 2px solid yellow;
+	border: 2px solid black;
 	padding: 5px;
 	text-align: center;
 	margin: 20px;
-	color: yellow;
+	color: black;
     text-decoration: none;
     float: left;
     box-shadow: 5px 10px;
 }
 
 .button:hover {
-	border: 2px solid yellow;
+	border: 2px solid black;
 	padding: 5px;
 	text-align: center;
 	margin: 20px;
-	color: yellow;
+	color: black;
     text-decoration: none;
 }
 
 .button-next {
-	border: 2px solid yellow;
+	border: 2px solid black;
 	padding: 5px;
 	text-align: center;
 	margin: 20px;
-	color: yellow;
+	color: black;
     text-decoration: none;
     float: right;
     box-shadow: 5px 10px;
 }
 
 .button-next:hover {
-	border: 2px solid yellow;
+	border: 2px solid black;
 	padding: 5px;
 	text-align: center;
 	margin: 20px;
-	color: yellow;
+	color: black;
     text-decoration: none;
     float: right;
 }
 
 #p1 {
 	float: left;
-	font-size: 250%;
 	clear: both;
 	display: block;
+	font-size: 250%;
 	padding: 5px;
 	margin:  50px 20px 20px 100px;
+
+
 }
 
 #p2 {
