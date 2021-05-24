@@ -14,8 +14,8 @@ font-family: 'Roboto Mono', monospace;
 }
 
 html {
-	/*background: url("/images/dragonleg.png") no-repeat center fixed; 
-    background-size: cover;*/
+	background: url("/images/shiny!.png") no-repeat center ; 
+    background-size: cover;
     background-color: yellow
 }
 
