@@ -1,13 +1,13 @@
-/*@font-face {
+@font-face {
     font-family: 'violet_sansregular';
     src: url("css/fonts/violetsans-regular-webfont.woff2") format('woff2'),
          url("css/fonts/violetsans-regular-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 
-}*/
+}
 
-/*font-family: 'Roboto Mono', monospace;*/
+font-family: 'Roboto Mono', monospace;
 
 * {
 	box-sizing: border-box;
@@ -20,7 +20,7 @@ html {
 }
 
 body { 
-	font-family: Consolas,monaco,monospace;  
+	font-family: 'Roboto Mono', monospace; 
 	font-weight: normal;
 	font-style: normal;
 	color: black;
@@ -32,6 +32,10 @@ body {
 
 li {
 	list-style:none;
+}
+
+h2 {
+	font-size: 150%;
 }
 
 
@@ -62,19 +66,19 @@ font-size: 75%;
 }*/
 
 .link2{
-	/*color: yellow;*/
+	color: black;
     text-decoration: none;
-    -webkit-text-fill-color: white;
+    /*-webkit-text-fill-color: #ff682c;
     -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-width: 2px; */
 }
 
 .link2:hover {
-	/*color: yellow;*/
+	color: #ff682c;
     text-decoration: none;
-    -webkit-text-fill-color: black;
+    /*-webkit-text-fill-color: black;
     -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-width: 2px;*/ 
 }
 
 .link {
@@ -123,7 +127,7 @@ font-size: 75%;
     float: left;
     color: black;
     display: block;
-    width: 99%;
+    width: 97%;
     -moz-border-radius:8px;
     -webkit-border-radius:8px;	
     border-radius:8px;	
@@ -211,6 +215,7 @@ font-size: 75%;
 	margin-left: 0%;
 	position: relative;
 	background-color: white;
+	/*box-shadow: 5px 5px;*/
 }
 
 #p1 {

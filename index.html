@@ -9,16 +9,32 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 	<link href="https://www.cssfontstack.com/Consolas" rel="stylesheet">
+		<script type="text/javascript"> 
+		function display_c(){
+		var refresh=1000; // Refresh rate in milli seconds
+		mytime=setTimeout('display_ct()',refresh)
+		}
+
+		function display_ct() {
+		var x = new Date()
+		document.getElementById('ct').innerHTML = x;
+		display_c();
+		 }
+		</script>
 </head>
 
-<body>
+<body onload=display_ct();>
+
 
 <div>
-	<marquee class="textbox" id="p">
-	 welcome to jessa gillespie's website! 
+	<marquee  class="textbox" id="p">
+	 u have reached merehuman.live, the archive of jessa gillespie.
 	</marquee>
 </div>
 
+<!-- <div class="button">
+<a href="/" class="link">return home</a>
+</div> -->
 
 <div> 
 	<p class="textbox" id="p1" >
@@ -45,6 +61,12 @@
 	<!-- <p class="textbox" >
 		<img src="images/icon.png">
 	</p> -->
+</div>
+
+<div>
+	<marquee onload="getDate()" class="textbox" id="p">
+	 <span id='ct'></span>
+	</marquee>
 </div>
 
 <!-- <div class="footer">
