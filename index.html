@@ -8,33 +8,51 @@
 	<meta name="viewport" content="width=device-width" initial-scale="1">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-	<script src="plain-draggable.min.js"></script> 
+	<script src="plain-draggable.min.js"></script>
+	<script src="leader-line.min.js"></script>
 </head>
 
 <body>
+	
 
-<!-- <script >
-draggable = new PlainDraggable(document.getElementById('draggable'));
+	<script src="leader-line.min.js">
+	// Add new leader line from `start` to `end` (HTML/SVG element, basically).
+	new LeaderLine(
+    document.getElementById('element-1'),
+    document.getElementById('element-2')
+	);
 
-</script>
+	// var startElement = document.getElementById('element-1'),
+ //  	endElement = document.getElementById('element-2');
 
-<div style="width: 300px; height: 300px;">
-<div id="draggable">jessa gillespie</div>
-</div> -->
+	// // New leader line has red color and size 8.
+	// new LeaderLine(startElement, endElement, {color: 'red', size: 8});
+
+	</script>
 
 
-
+<div style="height: 100px;">
+<div id="element-1">hello</div>
+<div id="element-2" style="margin-left: 100px;">hi</div>
+</div>
 
 
 <div>
-	<p class="textbox" id="p1">
-		<a class="link2" href="/welcome.html">welcome🌎</a>
+	<marquee class="textbox" id="p">
+	 welcome to jessa gillespie's website! 
+	</marquee>
+</div>
+
+
+<div> 
+	<p class="textbox" id="p1" >
+		<a class="link2"  href="/welcome.html">welcome🌎</a>
 	</p>
 </div>
 </div>
 <div>
-	<p class="textbox" id="p2">
-		<a class="link2" href="/work.html">work archive🤑</a>
+	<p class="textbox" id="p2" >
+		<a class="link2"  href="/work.html">work archive🤑</a>
 	</p>
 </div>
 
