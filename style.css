@@ -16,7 +16,7 @@
 html {
 	/*background: url("/images/websitebackground.png") no-repeat center ; 
     background-size: cover;*/
-    background-color: yellow;
+    background-color: #ff682c;
 }
 
 body { 
@@ -41,11 +41,17 @@ fieldset {
     -webkit-border-radius:8px;	
     border-radius:8px;	
     margin: 20px;
+    background-color: white;
 
 }
 
+@media (max-width: 800px) {
+body {
+font-size: 75%;
+}
+}
 
-.footer {
+/*.footer {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -53,12 +59,12 @@ fieldset {
   background-color: yellow;
   color: black;
   text-align: center;
-}
+}*/
 
 .link2{
 	/*color: yellow;*/
     text-decoration: none;
-    -webkit-text-fill-color: yellow;
+    -webkit-text-fill-color: white;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 2px; 
 }
@@ -77,7 +83,7 @@ fieldset {
 }
 
 .link:hover {
-	color: white;
+	color: #ff682c;
     text-decoration: none;
 }
 
@@ -87,7 +93,22 @@ fieldset {
 }
 
 .link1:hover {
-	color: white;
+	color: #ff682c;
+    text-decoration: none;
+}
+
+.link3 {
+	color:black; 
+	text-decoration: none;
+	border: 2px solid black;
+	 -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;
+    padding: 5px;
+}
+
+.link3:hover {
+	color: #ff682c;
     text-decoration: none;
 }
 
@@ -101,18 +122,27 @@ fieldset {
     text-decoration: outline;
     float: left;
     color: black;
-    background-color: yellow;
     display: block;
     width: 99%;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
     /*box-shadow: 5px 10px;*/
+    background-color: white;
 }
 
 .textbox1 {
 	border: 2px solid black;
+	 -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
 	padding: 5px;
+	margin: 5px;
 	overflow: hidden;
     color: black;
-    background-color: yellow;
+    display: block;
+    background-color: #f1f1f1 !important;
+    
 
 }
 
@@ -128,8 +158,12 @@ fieldset {
 	margin: 20px;
 	color: black;
     text-decoration: none;
-    box-shadow: 5px 10px;
+    box-shadow: 5px 5px;
     float: left;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;
+    background-color: white;	
 }
 
 .button:hover {
@@ -150,7 +184,11 @@ fieldset {
 	color: black;
     text-decoration: none;
     float: right;
-    box-shadow: 5px 10px;
+    box-shadow: 5px 5px;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+    background-color: white;
 }
 
 .button-next:hover {
@@ -172,7 +210,7 @@ fieldset {
 	padding: 5px;
 	margin-left: 0%;
 	position: relative;
-
+	background-color: white;
 }
 
 #p1 {
@@ -183,6 +221,7 @@ fieldset {
 	padding: 5px;
 	margin-left: 0%;
 	position: relative;
+	background-color: white;
 
 }
 
@@ -194,6 +233,7 @@ fieldset {
 	padding: 5px;
 	margin-left: 0%;
 	position: relative;
+	background-color: white;
 }
 
 #p3 {
@@ -204,6 +244,7 @@ fieldset {
 	padding: 5px;
 	margin-left: 0%;
 	position: relative;
+	background-color: white;
 }
 
 #p4 {
@@ -214,10 +255,12 @@ fieldset {
 	padding: 5px;
 	margin-left: 0%;
 	position: relative;
+	background-color: white;
 }
 
 #wa1 {
 	display: inline-block;
+	background-color: white;
 
 }
 
