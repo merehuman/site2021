@@ -14,8 +14,8 @@ font-family: 'Roboto Mono', monospace;
 }
 
 html {
-	/*background: url("/images/shiny!.png") no-repeat center ; 
-    background-size: cover;*/
+	background: url("/images/websitebackground.png") no-repeat center ; 
+    background-size: cover;
     background-color: yellow
 }
 
@@ -45,8 +45,9 @@ fieldset {
 
 }
 
+
 .footer {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -55,9 +56,25 @@ fieldset {
   text-align: center;
 }
 
-.link {
-	color: black;
+.link2{
+	/*color: yellow;*/
     text-decoration: none;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px; 
+}
+
+.link2:hover {
+	/*color: yellow;*/
+    text-decoration: none;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px; 
+}
+
+.link {
+	color:black; 
+	text-decoration: none;
 }
 
 .link:hover {
@@ -80,17 +97,18 @@ fieldset {
 	margin: 5px;
 	padding: 5px;
 	overflow: hidden;
-    transition-duration: 0.8s;
-    transition-property: transform;
-    text-decoration: none;
+    /*transition-duration: 0.8s;
+    transition-property: transform;*/
+    text-decoration: outline;
     float: left;
     color: black;
-    box-shadow: 5px 10px;
+
+    /*box-shadow: 5px 10px;*/
 }
 
 .textbox:hover {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
+    /*transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);*/
 }
 
 .button {
@@ -100,8 +118,8 @@ fieldset {
 	margin: 20px;
 	color: black;
     text-decoration: none;
-    float: left;
     box-shadow: 5px 10px;
+    float: left;
 }
 
 .button:hover {
@@ -111,6 +129,7 @@ fieldset {
 	margin: 20px;
 	color: black;
     text-decoration: none;
+    float: left;
 }
 
 .button-next {
@@ -135,43 +154,44 @@ fieldset {
 }
 
 #p1 {
-	float: left;
+	text-align: left;
 	clear: both;
 	display: block;
-	font-size: 250%;
+	font-size: 500%;
 	padding: 5px;
-	margin:  50px 20px 20px 100px;
-
+	margin-left: 0%;
+	position: relative;
 
 }
 
 #p2 {
-	float: right;
-	font-size: 210%;
+	text-align: left;
+	font-size: 500%;
 	clear: both;
 	display: block;
 	padding: 5px;
-	margin: 100px 200px 20px 20px;
+	margin-left: 0%;
+	position: relative;
 }
 
 #p3 {
-	float: left;
-	font-size: 200%;
+	text-align: left;
+	font-size: 500%;
 	clear: both;
 	display: block;
 	padding: 5px;
-	margin:  0px 20px 20px 200px;
-
+	margin-left: 0%;
+	position: relative;
 }
 
 #p4 {
-	float: right;
-	font-size: 150%;
+	text-align: left;
+	font-size: 500%;
 	clear: both;
 	display: block;
 	padding: 5px;
-	margin:  200px 750px 20px 20px;
-
+	margin-left: 0%;
+	position: relative;
 }
 
 #wa1 {
