@@ -1,11 +1,11 @@
-@font-face {
+/*@font-face {
     font-family: 'violet_sansregular';
     src: url("css/fonts/violetsans-regular-webfont.woff2") format('woff2'),
          url("css/fonts/violetsans-regular-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 
-}
+}*/
 
 /*font-family: 'Roboto Mono', monospace;*/
 
@@ -20,7 +20,7 @@ html {
 }
 
 body { 
-	font-family: 'violet_sansregular';
+	font-family: Consolas,monaco,monospace;  
 	font-weight: normal;
 	font-style: normal;
 	color: black;
@@ -168,7 +168,7 @@ fieldset {
 	text-align: left;
 	clear: both;
 	display: block;
-	font-size: 200%;
+	font-size: 150%;
 	padding: 5px;
 	margin-left: 0%;
 	position: relative;
