@@ -9,8 +9,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 	<link href="https://www.cssfontstack.com/Consolas" rel="stylesheet">
+	<script src="leader-line.min.js"></script>
 	<script src="plain-draggable.min.js"></script>
-		<script type="text/javascript"> 
+
+	<script type="text/javascript"> 
 		function display_c(){
 		var refresh=1000; // Refresh rate in milli seconds
 		mytime=setTimeout('display_ct()',refresh)
@@ -21,7 +23,8 @@
 		document.getElementById('ct').innerHTML = x;
 		display_c();
 		 }
-		</script>
+	</script>
+
 </head>
 
 <body onload=display_ct();>
@@ -30,61 +33,23 @@
 <div id="top"></div>
 <div id="bottom"></div> -->
 
+	<div class="left" id="start">welcome</div>
+	<div class="right" id="end">
+		<a class="link" id= "start2" href="https://www.instagram.com/mere.human/">instagram</a>
+	</div>
 
-<div id="dragdiv">
-	<div id="dragdivheader">jessa gillespie</div>
-</div>
+<!-- <div id="end" style="margin-left: 100px;">hello</div> -->
 
-<script type="text/javascript">
-	dragElement(document.getElementById("dragdiv"));
-
-	function dragElement(elmnt) {
-    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    if (document.getElementById(elmnt.id + "header")) {
-    // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-  } else {
-    // otherwise, move the DIV from anywhere inside the DIV:
-    elmnt.onmousedown = dragMouseDown;
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
-
-  function closeDragElement() {
-    // stop moving when mouse button is released:
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
-</script>
-
+	<!-- <div id="end"> -->
+		<!-- <div id="dragdivheader"> -->
+			<!-- <div id="draggable">jessa gillespie</div>
+		</div> -->
+	<br><br><br>
 
 <MARQUEE DIRECTION="down" BEHAVIOR="alternate" style="height: 100%;">
 <MARQUEE BEHAVIOR="alternate" ONMOUSEOVER="this.stop()" ONMOUSEOUT="this.start()">
 	<p class="textbox" id="p1" >
-		<a class="link2"  href="/welcome.html">welcome🌎</a>
+		<a class="link2" href="/welcome.html">hello🌎</a>
 	</p>
 </MARQUEE>
 </MARQUEE>
@@ -114,12 +79,100 @@
 </MARQUEE>
 
 <MARQUEE DIRECTION="down" BEHAVIOR="alternate" style="height: 100%;">
-<MARQUEE BEHAVIOR="alternate" ONMOUSEOVER="this.stop()" ONMOUSEOUT="this.start()">
+<MARQUEE BEHAVIOR="alternate" ONMOUSEOVER="this.stop()" ONMOUSEOUT="this.start()" >
 	<p class="textbox" id="p4">
 		<img src="images/icon.png" height="35px"></img>
 	</p>
 </MARQUEE>
 </MARQUEE>
+<br>
+
+
+<div class="footer" id="end2">to merehuman.live</div>
+<div class="footer2" id="end3">
+<a href="https://www.are.na/jessa-gillespie" class="link">are.na
+</a>
+</div>
+
+<script type="text/javascript">
+			dragElement(document.getElementById("dragdiv"));
+
+			function dragElement(elmnt) {
+		    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+		    if (document.getElementById(elmnt.id + "header")) {
+		    // if present, the header is where you move the DIV from:
+		    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+		  } else {
+		    // otherwise, move the DIV from anywhere inside the DIV:
+		    elmnt.onmousedown = dragMouseDown;
+		  }
+
+		  function dragMouseDown(e) {
+		    e = e || window.event;
+		    e.preventDefault();
+		    // get the mouse cursor position at startup:
+		    pos3 = e.clientX;
+		    pos4 = e.clientY;
+		    document.onmouseup = closeDragElement;
+		    // call a function whenever the cursor moves:
+		    document.onmousemove = elementDrag;
+		  }
+
+		  function elementDrag(e) {
+		    e = e || window.event;
+		    e.preventDefault();
+		    // calculate the new cursor position:
+		    pos1 = pos3 - e.clientX;
+		    pos2 = pos4 - e.clientY;
+		    pos3 = e.clientX;
+		    pos4 = e.clientY;
+		    // set the element's new position:
+		    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+		    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+		  }
+
+		  function closeDragElement() {
+		    // stop moving when mouse button is released:
+		    document.onmouseup = null;
+		    document.onmousemove = null;
+		  }
+		}
+		</script>
+
+
+		<script type="text/javascript">
+			new LeaderLine(
+  			document.getElementById('start'),
+  			document.getElementById('end'));
+
+  			var startElement = document.getElementById('start'),
+  			endElement = document.getElementById('end');
+
+  			new LeaderLine(startElement, endElement, {color: 'white', size: 5});
+
+			new LeaderLine(
+  			document.getElementById('start'),
+  			document.getElementById('end2'));
+
+  			var startElement = document.getElementById('start'),
+  			endElement = document.getElementById('end2');
+			// New leader line has red color and size 8.
+			new LeaderLine(startElement, endElement, {color: 'white', size: 5});
+
+			new LeaderLine(
+  			document.getElementById('start2'),
+  			document.getElementById('end3'));
+
+  			var startElement = document.getElementById('start2'),
+  			endElement = document.getElementById('end3');
+			// New leader line has red color and size 8.
+			new LeaderLine(startElement, endElement, {color: 'white', size: 5});
+		</script>
+
+		<script type="text/javascript">
+			draggable = new PlainDraggable(element);
+			
+		</script>
 
 
 
