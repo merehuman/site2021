@@ -180,10 +180,11 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
     -webkit-transform: rotate(360deg);*/
 }
 
-.box {
-	width:100%;
-	height: 100%;
-}
+/*.box {
+	width: 500px;
+	height: 200px;
+	background-color: white;
+}*/
 
 .button {
 	border: 2px dotted white;
@@ -235,10 +236,25 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
     float: right;
 }
 
+#dragdiv {
+	position: absolute;
+	border: 2px dotted white;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;
+    padding: 5px;
+}
+
+#dragdivheader {
+	cursor: move;
+	font-size: 300%;
+
+}
+
 
 #p, #p1, #p2, #p3, #p4 {
 	overflow: hidden;
-	font-size: 250%;
+	font-size: 300%;
 	padding: 5px;
 	/*margin: 1%;*/
 	position: relative;
