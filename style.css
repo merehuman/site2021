@@ -16,18 +16,14 @@ font-family: 'Roboto Mono', monospace;
 html {
 	/*background: url("/images/websitebackground.png") no-repeat center ; 
     background-size: cover;*/
-    background-color: #ff682c;
+    background-color: black;
 }
 
 body { 
 	font-family: 'Roboto Mono', monospace; 
 	font-weight: normal;
 	font-style: normal;
-	color: black;
-	/*background-color: yellow;*/
-   /* width: 100%;
-    height: auto;*/
-
+	color: white;
 }
 
 li {
@@ -38,22 +34,54 @@ h2 {
 	font-size: 150%;
 }
 
-
 fieldset {
-    border:2px solid black;
+    border:2px solid white;
     -moz-border-radius:8px;
     -webkit-border-radius:8px;	
     border-radius:8px;	
     margin: 20px;
-    background-color: white;
+    background-color: black;
 
 }
 
 @media (max-width: 800px) {
 body {
 font-size: 75%;
+display: block;
+
+
 }
 }
+
+@media 
+
+/* Fairly small screens including iphones */
+only screen and (max-width: 500px),
+
+/* iPads */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+
+{
+	#top, #bottom, #left, #right { display: none; }
+}
+
+#top, #bottom, #left, #right {
+	background: white;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
 
 /*.footer {
   position: absolute;
@@ -65,8 +93,18 @@ font-size: 75%;
   text-align: center;
 }*/
 
+.link {
+	color:white; 
+	text-decoration: none;
+}
+
+.link:hover {
+	color: yellow;
+    text-decoration: none;
+}
+
 .link2{
-	color: black;
+	color: white;
     text-decoration: none;
     /*-webkit-text-fill-color: #ff682c;
     -webkit-text-stroke-color: black;
@@ -74,35 +112,25 @@ font-size: 75%;
 }
 
 .link2:hover {
-	color: #ff682c;
+	color: yellow;
     text-decoration: none;
     /*-webkit-text-fill-color: black;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 2px;*/ 
 }
 
-.link {
-	color:black; 
-	text-decoration: none;
-}
-
-.link:hover {
-	color: #ff682c;
-    text-decoration: none;
-}
-
 .link1 {
-	color: black;
+	color: white;
     text-decoration: underline;
 }
 
 .link1:hover {
-	color: #ff682c;
+	color: yellow;
     text-decoration: none;
 }
 
 .link3 {
-	color:black; 
+	color:white; 
 	text-decoration: none;
 	border: 2px solid black;
 	 -moz-border-radius:8px;
@@ -117,26 +145,24 @@ font-size: 75%;
 }
 
 .textbox {
-	border: 2px solid black;
-	margin: 5px;
+	/*border: 2px solid white;*/
+	margin: 10px;
 	padding: 5px;
 	overflow: hidden;
     /*transition-duration: 0.8s;
     transition-property: transform;*/
-    text-decoration: outline;
-    float: left;
-    color: black;
-    display: block;
-    width: 97%;
+    /*float: left;
+    display: block;*/
+    /*width: 25%;*/
     -moz-border-radius:8px;
     -webkit-border-radius:8px;	
     border-radius:8px;	
-    /*box-shadow: 5px 10px;*/
-    background-color: white;
+    color: white;
+    background-color: black;
 }
 
 .textbox1 {
-	border: 2px solid black;
+	border: 2px solid white;
 	 -moz-border-radius:8px;
     -webkit-border-radius:8px;	
     border-radius:8px;	
@@ -145,9 +171,8 @@ font-size: 75%;
 	overflow: hidden;
     color: black;
     display: block;
-    background-color: #f1f1f1 !important;
+    background-color:black;
     
-
 }
 
 .textbox:hover {
@@ -155,117 +180,80 @@ font-size: 75%;
     -webkit-transform: rotate(360deg);*/
 }
 
+.box {
+	width:100%;
+	height: 100%;
+}
+
 .button {
-	border: 2px solid black;
+	border: 2px dotted white;
 	padding: 5px;
 	text-align: center;
 	margin: 20px;
-	color: black;
+	color: white;
     text-decoration: none;
-    box-shadow: 5px 5px;
+    /*box-shadow: 5px 5px;*/
     float: left;
     -moz-border-radius:8px;
     -webkit-border-radius:8px;	
     border-radius:8px;
-    background-color: white;	
+    background-color: black;	
 }
 
 .button:hover {
-	border: 2px solid black;
+	border: 2px dotted white;
 	padding: 5px;
 	text-align: center;
 	margin: 20px;
-	color: black;
+	color: yellow;
     text-decoration: none;
     float: left;
 }
 
 .button-next {
-	border: 2px solid black;
+	border: 2px dotted white;
 	padding: 5px;
 	text-align: center;
 	margin: 20px;
-	color: black;
+	color: white;
     text-decoration: none;
     float: right;
-    box-shadow: 5px 5px;
+    /*box-shadow: 5px 5px;*/
     -moz-border-radius:8px;
     -webkit-border-radius:8px;	
     border-radius:8px;	
-    background-color: white;
+    background-color: black;
 }
 
 .button-next:hover {
-	border: 2px solid black;
+	border: 2px dotted white;
 	padding: 5px;
 	text-align: center;
 	margin: 20px;
-	color: black;
+	color: yellow;
     text-decoration: none;
     float: right;
 }
 
 
-#p {
-	text-align: left;
-	clear: both;
-	display: block;
-	font-size: 150%;
+#p, #p1, #p2, #p3, #p4 {
+	overflow: hidden;
+	font-size: 250%;
 	padding: 5px;
-	margin-left: 0%;
+	/*margin: 1%;*/
 	position: relative;
-	background-color: white;
-	/*box-shadow: 5px 5px;*/
+	background-color: black;
+	border: 2px dotted white;
 }
 
-#p1 {
-	text-align: left;
-	clear: both;
-	display: block;
-	font-size: 500%;
-	padding: 5px;
-	margin-left: 0%;
-	position: relative;
-	background-color: white;
+#p1, #p2, #p3, #p4 {
 
 }
 
-#p2 {
-	text-align: left;
-	font-size: 500%;
-	clear: both;
-	display: block;
-	padding: 5px;
-	margin-left: 0%;
-	position: relative;
-	background-color: white;
-}
-
-#p3 {
-	text-align: left;
-	font-size: 500%;
-	clear: both;
-	display: block;
-	padding: 5px;
-	margin-left: 0%;
-	position: relative;
-	background-color: white;
-}
-
-#p4 {
-	text-align: left;
-	font-size: 500%;
-	clear: both;
-	display: block;
-	padding: 5px;
-	margin-left: 0%;
-	position: relative;
-	background-color: white;
-}
 
 #wa1 {
 	display: inline-block;
-	background-color: white;
+	background-color: black;
 
 }
 
