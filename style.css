@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'violet_sansregular';
     src: url("css/fonts/violetsans-regular-webfont.woff2") format('woff2'),
@@ -14,13 +16,13 @@ font-family: 'Roboto Mono', monospace;
 }
 
 html {
-	background: url("/images/backgrounddark.png") no-repeat center center fixed ; 
-    background-size: cover;
-        background-color: black;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+      /*background: url("/images/backgrounddark.png") no-repeat center center fixed ; 
+	  background-size: cover;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;*/
+	  background-color: black;
 }
 
 body { 
@@ -41,9 +43,10 @@ h2 {
 fieldset {
     border:2px dotted white;
     -moz-border-radius:8px;
-    -webkit-border-radius:8px;	
+    -webkit-border-radius:8px;
     border-radius:8px;	
-    margin: 20px;
+    margin: 10px;
+    
 
 }
 
@@ -54,9 +57,13 @@ display: block;
 
 
 }
+
+.ui-dialog, .ui-dialog-content {
+	width:200px;
+}
 }
 
-@media 
+@media {
 
 /* Fairly small screens including iphones */
 only screen and (max-width: 500px),
@@ -64,29 +71,45 @@ only screen and (max-width: 500px),
 /* iPads */
 only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
 
-{
-	#top, #bottom, #left, #right { display: none; }
 }
 
-#top, #bottom, #left, #right {
-	background: white;
-	position: fixed;
-	}
-	#left, #right {
-		top: 0; bottom: 0;
-		width: 15px;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
-		
-	#top, #bottom {
-		left: 0; right: 0;
-		height: 15px;
-		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
+.ui-dialog {
+	background-color: black;
+	min-width: 900px;
+    z-index: 1;
+     border:2px dotted white;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;	
+    margin: 10px;
+    padding: 10px;
+}
 
+.ui-dialog-title {
+	font-size: 200%;
+}
 
+.ui-dialog-titlebar-close {
+	float: right;
+	position: relative;
+	z-index: 1;
+}
+
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+       background: url("images/close.png") no-repeat center;
+
+       border: none;
+       background-color: black;
+       color: black;
+       font-size: 100%;
+    }
+
+#opener {
+	font-size: 100%;
+	text-decoration: none;
+	background-color: black;
+	border: none;
+}
 
 .left {
 	display: inline-block;
@@ -228,7 +251,7 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 	border: 2px dotted white;
 	padding: 5px;
 	text-align: center;
-	margin: 20px;
+	margin: 10px;
 	color: white;
     text-decoration: none;
     /*box-shadow: 5px 5px;*/
@@ -320,10 +343,8 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 	position: relative;
 	/*background-color: black;*/
 	border: 2px dotted white;
-	z-index: 1;
+	
 }
-
-
 
 
 #wa1 {
