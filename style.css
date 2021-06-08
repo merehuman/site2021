@@ -55,10 +55,19 @@ body {
 	font-size: 75%;
 	display: block;
 }
-
-.ui-dialog, .ui-dialog-content {
-	width:200px;
+img {
+	height: 250px;
 }
+
+.ui-dialog-content, .ui-dialog{
+	max-width: 300px;
+	height: 500px;
+}
+
+#dialog {
+	width: 300px;
+}
+
 }
 @media {
 
@@ -72,7 +81,9 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 
 .ui-dialog {
 	background-color: black;
-	min-width: 900px;
+	width: 900px !important;
+	max-height: 600px !important;
+  	overflow-y: scroll;
     z-index: 1;
      border:2px dotted white;
     -moz-border-radius:8px;
@@ -100,7 +111,14 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 
     }
 
-#opener, #opener1, #opener2, #opener3 {
+.ui-dialog-titlebar {
+	background-color: black;
+	padding: 5px;
+	border-bottom: 2px dotted white;
+}
+
+
+#opener, #opener1, #opener2, #opener3, #opener4, #opener5, #opener6, #opener7, #opener8, #opener9, #opener10, #opener11, #opener12, #opener13, #opener14, #opener15, #opener16 {
 	font-size: 100%;
 	font-family: 'Roboto Mono', monospace;
 	text-decoration: none;
@@ -217,6 +235,7 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
     -webkit-border-radius:8px;	
     border-radius:8px;	
     color: white;
+    background-color: black;
 
 }
 
@@ -354,7 +373,7 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 	overflow-x: scroll;
   	overflow-y: hidden;
  	white-space: nowrap;
-  	width: 50%;
+  	width: 99%;
 }
 
 .img {
