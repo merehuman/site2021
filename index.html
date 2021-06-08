@@ -86,26 +86,121 @@
 <MARQUEE DIRECTION="down" BEHAVIOR="alternate" style="height: 100%;">
 <MARQUEE BEHAVIOR="alternate" ONMOUSEOVER="this.stop()" ONMOUSEOUT="this.start()">
 	<p class="textbox" id="p2" >
-		<a class="link2"  href="/work.html">work archive🤑</a>
+		<button class="link2"  id="opener1" >work archive🤑</button>
 	</p>
 </MARQUEE>
 </MARQUEE>
+
+<div id="dialog1" title="work archive🤑">
+	<p>
+	<div>
+
+	<div class="textbox"><u>2021</u><br>
+	<i>website design & development</i> for latitude 53 & megan gnanisihamany's online exhibition
+	</div>
+
+	<div class="textbox"><u>2021</u><br>
+	<i>website design/graphic design</i> for the intersections of gender department at the university of alberta
+	</div>
+
+	<div class="textbox">
+	<u>2019-present</u> <br>
+	<i>3d graphics & interactive programming</i> for <a class="link" href= "https://www.stephaniedinkins.com/ntoo.html"><u>stephanie dinkins studio</u> ↷</a> 
+	</div>
+
+	<div class="textbox" >
+		<a href="/sdstudio.html" class="link"><u>check out jessa's work with stephanie!</u></a>
+	</div>
+
+	<div class="textbox">
+	<u>2018-present</u><br>
+	<i>graphic design</i> for bar laika by e-flux
+	</div>
+
+	<div class="textbox">
+	<u>2017-present</u><br>
+	<i>virtual reality development</i> for <a class="link" href="https://www.bradnecyk.com/"><u>brad necyk</u></a>
+	</div>
+
+	<div class="textbox">
+	<u>2019</u><br>
+	<i>virtual reality development</i> for <a class="link" href="https://unmpress.com/books/cave-city-and-eagles-nest/9780826342836"><u>mapa de cuauhtinchan project</u></a> in collaboration with davíd carrasco, laana carrasco, and stewart bird 
+	</div> 
+
+	<div class="textbox">
+	<u>2017-2019</u><br>
+	<i>game development & 3d graphics</i> on <a class="link" href="http://www.audiogameslab.ca/projects/lostgarden/"><u>the lost garden</u></a> with scott smallwood and nico arnaez ↷
+	</div>
+
+	<div class="textbox" >
+		<a href="/thelostgarden.html" class="link"><u>see what jessa made for this game :)</u></a>
+	</div>
+
+	<div class="textbox">
+	<u>2013-2017</u><br>
+	<i>bachelor of fine arts</i> at the university of alberta
+	</div>
+	</div></p>
+</div>
+
 
 <MARQUEE DIRECTION="down" BEHAVIOR="alternate" style="height: 100%;">
 <MARQUEE BEHAVIOR="alternate" ONMOUSEOVER="this.stop()" ONMOUSEOUT="this.start()">
 	<p class="textbox" id="p3">
-		<a class="link2" href="/personalprojects.html">personal projects archive🤠</a>
+		<button class="link2" id="opener2">personal projects archive🤠</button>
 	</p>
 </MARQUEE>
 </MARQUEE>
 
+<div id="dialog2" title="personal projects archive🤠">
+	<p>
+		<u>2020</u><br>
+		<a class="link3" href="/myheart.html">my heart moves faster than my brain</a>
+		<br><br>
+		<u>2020</u><br>
+		<a class="link3" href="https://merehuman.github.io/presentationseries/index.html">community presentation series</a>
+		<br><br>
+		<u>2020</u><br>
+		<a class="link3" href="/queergaming.html">queer gaming group</a>
+		<br><br>
+		<u>2019</u><br>
+		<a class="link3" href="/dragontrain.html">dragon train</a>
+		<br><br>
+		<u>2018</u><br>
+		<a class="link3" href="/material.html">material^tm</a>
+		<br><br>
+		<u>2018</u><br>
+		<a class="link3" href="/selfdisclosures.html">self disclosures</a>
+		<br><br>
+		<u>2018</u><br>
+		<a class="link3" href="/monster.html">when jessa was obsessed with monster</a>
+	</p>
+</div>
+
+
 <MARQUEE DIRECTION="down" BEHAVIOR="alternate" style="height: 100%;">
 <MARQUEE BEHAVIOR="alternate" ONMOUSEOVER="this.stop()" ONMOUSEOUT="this.start()">
 	<p class="textbox" id="p4">
-		<a class="link2" href="/blogposts.html">blog posts💌</a>
+		<button class="link2" id="opener3">blog posts💌</button>
 	</p>
 </MARQUEE>
 </MARQUEE>
+
+<div id="dialog3" title="blog posts💌">
+	<p>
+		<u>2020</u><br>
+		<a class="link3" href="/stateofthedisunion.html">state of the disunion</a>
+		<br><br>
+		<u>2019</u><br>
+		<a class="link3" href="/gamesjessaloves.html">games jessa loves</a> 
+		<br><br>
+		<u>12.08.2019</u><br>
+		<a class="link3" href="/blogpost2.html">blog!post!2!</a>
+		<br><br>
+		<u>10.20.2019</u><br>
+		<a class="link3" href="/blogpost1.html">blog post 1 abt important thoughts & feelings</a>
+	</p>
+</div>
 
 <MARQUEE DIRECTION="down" BEHAVIOR="alternate" style="height: 100%;">
 <MARQUEE BEHAVIOR="alternate" ONMOUSEOVER="this.stop()" ONMOUSEOUT="this.start()" >
@@ -129,7 +224,21 @@
         $( "#opener" ).click(function() {
         $( "#dialog" ).dialog( "open" );
         });
+
+        $( "#dialog1" ).dialog({ autoOpen: false });
+        $( "#opener1" ).click(function() {
+        $( "#dialog1" ).dialog( "open" );
+        });
+
+        $( "#dialog2" ).dialog({ autoOpen: false });
+        $( "#opener2" ).click(function() {
+        $( "#dialog2" ).dialog( "open" );
+        });
        
+        $( "#dialog3" ).dialog({ autoOpen: false });
+        $( "#opener3" ).click(function() {
+        $( "#dialog3" ).dialog( "open" );
+        });
 
 	</script>
 
